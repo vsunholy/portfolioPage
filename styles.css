@@ -14,6 +14,10 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Navigation */
@@ -161,7 +165,9 @@ nav {
 .social-links a:hover {
   color: #1976d2;
 }
-
+.top {
+  text-align: center;
+}
 /* Footer */
 footer {
   background: #1b2a49;

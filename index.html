@@ -1,184 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>QA Tester Portfolio</title>
-    <!-- Material Icons and Materialize CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QA Tester Portfolio</title>
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="nav-wrapper deep-purple darken-3 z-depth-2">
-        <div class="container">
-            <a href="#" class="brand-logo">QA Portfolio</a>
-            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+  <header>
+    <nav>
+      <div class="container nav-container">
+        <a href="#" class="brand-logo">QA Portfolio</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+        <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+      </div>
     </nav>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>[Vitalij Snopov]</h1>
+        <p>Junior QA Tester | Automation &amp; Manual Testing</p>
+      </div>
+    </section>
+  </header>
 
-    <!-- Mobile Navigation -->
-    <ul class="sidenav" id="mobile-nav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <!-- Hero Section -->
-    <section class="hero valign-wrapper">
-        <div class="container center-align hero-content">
-            <h1 class="white-text animate fadeInDown">[Vitalij Snopov]</h1>
-            <p class="flow-text white-text animate fadeInUp delay-1">Junior QA Tester | Automation &amp; Manual Testing
-            </p>
-        </div>
+  <main>
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I'm an QA Tester from Klaipėda, Lithuania, on a mission to ensure rock-solid software quality. When I'm not busy crafting automated tests, you'll find me diving into cool projects, exploring new hobbies, and jamming to my favorite tunes!</p>
+        <p><strong>Passion:</strong> End-to-end &amp; API testing that pushes quality boundaries.</p>
+        <p><strong>Tech Explorer:</strong> Always on the hunt for the next big tool or framework.</p>
+        <p><strong>Energy Boost:</strong> Powered by caffeine, creativity, and a drive for perfection.</p>
+      </div>
     </section>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- About Section -->
-        <section id="about" class="section scrollspy animate fadeInUp">
-            <h2 class="section-title">About Me</h2>
-            <p>
-                I'm an QA Tester from Klaipėda, Lithuania, on a mission to ensure rock-solid software quality.<br> When
-                I'm
-                not busy crafting automated tests, you'll find me diving into cool projects, exploring new
-                hobbies,<br>and
-                jamming to my favorite tunes!
-                <br /><br />
-                Passion: End-to-end & API testing that pushes quality boundaries.<br /><br />
-                Tech Explorer: Always on the hunt for the next big tool or framework.<br /><br />
-                Energy Boost: Powered by caffeine, creativity, and a drive for perfection.
-            </p>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section scrollspy animate fadeInUp delay-1">
-            <h2 class="section-title">Skills</h2>
-            <div class="row">
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title">Automation Testing</span>
-                            <p>Proficient in Playwright, Cypress, and modern automation frameworks to ensure reliable
-                                test
-                                execution.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title">Manual Testing</span>
-                            <p>Skilled in exploratory, regression, and usability testing with a keen eye for detail.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title">CI/CD Integration</span>
-                            <p>Seamlessly integrate testing pipelines GitHub Actions</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title">Tools</span>
-                            <p>Tech Stack:JavaScript,Cypress,Playwright,HTML5,CSS,JMeter,Postman,Git & GitHub</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section scrollspy animate fadeInUp delay-2">
-            <h2 class="section-title">Projects</h2>
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title">Project One</span>
-                            <p>
-                                A comprehensive testing suite for a dynamic web application. The project showcases
-                                automated test scripts, detailed reports, and agile methodologies.
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a href="https://github.com/vsunholy/your-project-one" target="_blank">View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title">Project Two</span>
-                            <p>
-                                A project centered on performance and security testing to guarantee robust and secure
-                                application delivery.
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a href="https://github.com/vsunholy/your-project-two" target="_blank">View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section scrollspy animate fadeInUp delay-3">
-            <h2 class="section-title">Contact</h2>
-            <div class="row">
-                <form class="col s12 m8 offset-m2">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="name" type="text" class="validate" required>
-                            <label for="name">Your Name</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <input id="email" type="email" class="validate" required>
-                            <label for="email">Your Email</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <textarea id="message" class="materialize-textarea" required></textarea>
-                            <label for="message">Your Message</label>
-                        </div>
-                    </div>
-                    <div class="center-align">
-                        <button class="btn-large waves-effect waves-light" type="submit">
-                            Send Message
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="page-footer deep-purple darken-3">
-        <div class="container center-align">
-            <p>&copy; [Year] [Your Name]. All Rights Reserved.</p>
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Automation Testing</h3>
+            <p>Proficient in Playwright, Cypress, and modern automation frameworks to ensure reliable test execution.</p>
+          </div>
+          <div class="card">
+            <h3>Manual Testing</h3>
+            <p>Skilled in exploratory, regression, and usability testing with a keen eye for detail.</p>
+          </div>
+          <div class="card">
+            <h3>CI/CD Integration</h3>
+            <p>Seamlessly integrate testing pipelines with GitHub Actions and other tools.</p>
+          </div>
+          <div class="card">
+            <h3>Tools</h3>
+            <p>JavaScript, Cypress, Playwright, HTML5, CSS, JMeter, Postman, Git &amp; GitHub</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- Materialize JavaScript and Custom Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="script.js"></script>
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Project One</h3>
+            <p>A comprehensive testing suite for a dynamic web application. The project showcases automated test scripts, detailed reports, and agile methodologies.</p>
+            <a href="https://github.com/vsunholy/your-project-one" target="_blank" class="btn">
+              View on GitHub <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <div class="card">
+            <h3>Project Two</h3>
+            <p>A project centered on performance and security testing to guarantee robust and secure application delivery.</p>
+            <a href="https://github.com/vsunholy/your-project-two" target="_blank" class="btn">
+              View on GitHub <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="connect" class="section connect">
+      <div class="container">
+        <h2>Connect with Me</h2>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; [Year] [Your Name]. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
